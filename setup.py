@@ -1,8 +1,7 @@
-import os
+
 from setuptools import setup
 from torch.utils.cpp_extension import BuildExtension, CUDAExtension
 
-os.environ['CUDA_HOME'] = 'C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v11.7'
 
 with open('README.md', 'r', encoding='utf-8') as fh:
     long_description = fh.read()
@@ -14,7 +13,7 @@ setup(
     author_email='ads0600@felix-petersen.de',
     long_description=long_description,
     long_description_content_type='text/markdown',
-    url='https://github.com/Felix-Petersen/difflogic',
+    url='https://github.com/Bxcrnr/difflogic',
     classifiers=[
         'Programming Language :: Python :: 3',
         'License :: OSI Approved :: MIT License',
