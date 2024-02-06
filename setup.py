@@ -31,7 +31,7 @@ setup(
         'difflogic/cuda/difflogic.cpp',
         'difflogic/cuda/difflogic_kernel.cu',
     ], extra_compile_args={'nvcc': ['-Xcompiler', '/openmp']})],
-    shell_cmdclass={'build_ext': BuildExtension},
+    cmdclass={'build_ext': BuildExtension},
     python_requires='>=3.6',
     install_requires=[
         'torch>=1.6.0',
