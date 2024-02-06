@@ -1,5 +1,8 @@
+import os
 from setuptools import setup
 from torch.utils.cpp_extension import BuildExtension, CUDAExtension
+
+os.environ['CUDA_HOME'] = 'C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v11.7'
 
 with open('README.md', 'r', encoding='utf-8') as fh:
     long_description = fh.read()
